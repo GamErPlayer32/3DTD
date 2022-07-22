@@ -1,6 +1,6 @@
 {
-  "option_windows_display_name": "Created with GameMaker",
-  "option_windows_executable_name": "${project_name}.exe",
+  "option_windows_display_name": "The 3D Tower Defence Game",
+  "option_windows_executable_name": "The 3D Tower Defence Game.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "YoYo Games Ltd",
   "option_windows_product_info": "Created with GameMaker",
