@@ -14,6 +14,7 @@
     {"id":{"name":"GMLive_parser","path":"scripts/GMLive_parser/GMLive_parser.yy",},"order":4,},
     {"id":{"name":"GMLive_nodeTools","path":"scripts/GMLive_nodeTools/GMLive_nodeTools.yy",},"order":3,},
     {"id":{"name":"GMLive_program","path":"scripts/GMLive_program/GMLive_program.yy",},"order":3,},
+    {"id":{"name":"shd_billboard","path":"shaders/shd_billboard/shd_billboard.yy",},"order":0,},
     {"id":{"name":"GMLive_seekEval","path":"scripts/GMLive_seekEval/GMLive_seekEval.yy",},"order":5,},
     {"id":{"name":"GMLive_vm_call","path":"scripts/GMLive_vm_call/GMLive_vm_call.yy",},"order":6,},
     {"id":{"name":"GMLive_token","path":"scripts/GMLive_token/GMLive_token.yy",},"order":7,},
