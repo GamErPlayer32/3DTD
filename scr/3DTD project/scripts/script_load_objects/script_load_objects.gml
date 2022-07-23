@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_sprite_billboard(_si,_ii,_xx,_yy,_zz,_scale,_vis,_dir){
 	shader_set(shd_billboard);
 	matrix_set(matrix_world,matrix_build(_xx,_yy,_zz,0,0,_dir+90,1,1,1));
