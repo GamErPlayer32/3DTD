@@ -2,13 +2,22 @@ if (live_call()) return live_result;
 //get camera propertys
 #region camera settings
 var xa=2, ya=2, za=2, xb=0, yb=0, zb=0, xc=0, yc=0, zc=-1;
-var fovy=70,aspect=16/9,zn=1,zf=32000;
+var fovy=70,aspect=16/9,zn=0.01,zf=32000;
 #endregion
 
+#region Update Camera Cords
+xa = _x;
+ya = _y;
+za = _z;
+xb = xa + dcos(_look_dir) * dcos(_look_pit);
+yb = ya + dsin(_look_dir) * dcos(_look_pit);
+zb = za - dsin(_look_pit);
+#endregion
 //First Person Camera
 
 //set the cameras data
 #region camera setup
+draw_clear(c_black);
 var camera = camera_get_active();
 camera_set_view_mat(camera, matrix_build_lookat(xa,ya,za,	
 												xb,yb,zb,

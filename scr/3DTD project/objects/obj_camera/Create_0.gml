@@ -5,10 +5,12 @@ gpu_set_zwriteenable(true);
 //setup camera variables
 #region Variables Setup
 depth = 9999;
+_spd = 0.01;
 _x = 1;
 _y = 1;
 _z = 1;
 _look_dir = 0;
+_look_pit = 0;
 #endregion
 
 //Create Vertex Format
