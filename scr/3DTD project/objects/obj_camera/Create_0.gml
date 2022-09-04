@@ -5,10 +5,11 @@ gpu_set_zwriteenable(true);
 //setup camera variables
 #region Variables Setup
 depth = 9999;
-_spd = 0.01;
-_x = 1;
-_y = 1;
-_z = 1;
+_spd = 0.1;
+_x = 10;
+_y = 10;
+_z = 10;
+_last_key_timer = 0;
 _look_dir = 0;
 _look_pit = 0;
 #endregion
