@@ -27,4 +27,5 @@ vertex_format = vertex_format_end();
 //load Objects
 #region load objects
 land = scr_inport_obj("temp_house_playground.obj",vertex_format);
+container = scr_inport_obj("container.obj",vertex_format);
 #endregion

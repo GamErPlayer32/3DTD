@@ -6,9 +6,9 @@ var fovy=70,aspect=16/9,zn=0.01,zf=32000;
 #endregion
 
 #region Update Camera Cords
-xa = _x/10;
-ya = _y/10;
-za = _z/10;
+xa = _x/1;
+ya = _y/1;
+za = _z/1;
 xb = xa + dcos(_look_dir) * dcos(_look_pit);
 yb = ya + dsin(_look_dir) * dcos(_look_pit);
 zb = za - dsin(_look_pit);
@@ -28,10 +28,27 @@ camera_apply(camera);
 
 //submit the vertex / 3D objects to the world
 #region Vertex Draw
-matrix_set(matrix_world,matrix_build(0,0,0,	-90,0,0,	1,1,1));
+matrix_set(matrix_world,matrix_build(0,0,0,	-90,0,0,	10,10,10));
 vertex_submit(land,pr_trianglelist,sprite_get_texture(spr_texture_1,0)); //sprite_get_texture(spr_texture_1,0)
 matrix_set(matrix_world,matrix_build_identity());
-matrix_set(matrix_world,matrix_build(0,0,0,	-90,0,0,	1,1,1));
+
+//draw containers
+matrix_set(matrix_world,matrix_build(0,0,0,	-90,0,0,	10,10,10));
 vertex_submit(land,pr_linelist,-1);
+matrix_set(matrix_world,matrix_build_identity());
+matrix_set(matrix_world,matrix_build(0,0,1,	-90,0,0,	1,1,1));
+vertex_submit(container,pr_trianglelist,sprite_get_texture(spr_texture_1,0)); //sprite_get_texture(spr_texture_1,0)
+matrix_set(matrix_world,matrix_build_identity());
+matrix_set(matrix_world,matrix_build(20,35,1,	-90,0,0,	1,1,1));
+vertex_submit(container,pr_trianglelist,sprite_get_texture(spr_texture_1,0)); //sprite_get_texture(spr_texture_1,0)
+matrix_set(matrix_world,matrix_build_identity());
+matrix_set(matrix_world,matrix_build(-20,-30,1,	-90,0,0,	1,1,1));
+vertex_submit(container,pr_trianglelist,sprite_get_texture(spr_texture_1,0)); //sprite_get_texture(spr_texture_1,0)
+matrix_set(matrix_world,matrix_build_identity());
+matrix_set(matrix_world,matrix_build(-30,30,1,	-90,0,0,	1,1,1));
+vertex_submit(container,pr_trianglelist,sprite_get_texture(spr_texture_1,0)); //sprite_get_texture(spr_texture_1,0)
+matrix_set(matrix_world,matrix_build_identity());
+matrix_set(matrix_world,matrix_build(30,30,1,	-90,0,0,	1,1,1));
+vertex_submit(container,pr_trianglelist,sprite_get_texture(spr_texture_1,0)); //sprite_get_texture(spr_texture_1,0)
 matrix_set(matrix_world,matrix_build_identity());
 #endregion
